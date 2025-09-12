@@ -1,0 +1,21 @@
+public class Thisdemo {
+    int a, b;
+
+    public void get(int a, int y) {
+        this.a = a;
+        this.b = y;
+    }
+
+    public void put() {
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+    }
+}
+
+class Demo {
+    public static void main(String[] args) {
+        Thisdemo obj = new Thisdemo();
+        obj.get(10, 20);
+        obj.put();
+    }
+}
